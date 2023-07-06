@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -un*.html
+find . -name "*.html" -type f -exec cp --update --parents {} ../ \;
